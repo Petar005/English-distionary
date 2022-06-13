@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="app.css">
+  <title>English Dictionary</title>
+</head>
+<body>
+  <header id="dictionarySearch">
+    <h1>English Dictionary</h1>
+
+    <form action="#">
+      <label for="searchWord"><i class="fa-solid fa-magnifying-glass"></i></label>
+      <input type="text" name="searchWord" id="searchWord" placeholder="Search">
+    </form>
+  </header>
+
+  <main id="searchResults">
+    <div id="listening">
+      <h2 class="listen" id="word"></h2>
+      <small class="listen" id="pronounce"></small>
+      <audio id="sound"></audio>
+      <button id="playSound"><i class="fa-solid fa-volume-high" id="volume"></i></button>
+    </div>
+
+    <div class="result" id="firstResult">
+      <div class="content">
+        <h3 id="meaning"></h3>
+          <p id="meaningText"></p>
+      </div>
+    </div>
+
+    <div class="result">
+      <div class="content">
+        <h3 id="example"></h3>
+        <p id="exampleText"></p>
+      </div>
+    </div>
+
+    <div class="result">
+      <div class="content">
+        <h3 id="synonyms"></h3>
+        <p id="synonymsText"></p>
+      </div>
+    </div>
+  </main>
+  <script src="https://kit.fontawesome.com/37efda501f.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
